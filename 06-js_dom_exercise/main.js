@@ -12,8 +12,11 @@ window.onload = function () {
   let newThingButton = document.querySelector('#new-thing-button')
   let list = document.querySelector('ul')
   let favThingInput = document.querySelector('#new-thing')
-  list.setAttribute(
- 'style', 'list-style: url(images/tick.png);')
+  list.setAttribute('style', 'list-style: url(images/tick.png);')
+  // let listItem = document.querySelector('li')
+  // let createCheckImg = document.createElement('img')
+  // createCheckImg.src = 'images/untick.png'
+  // listItem.appendChild(createCheckImg)
 
   // when someone clicks the button...
   newThingButton.addEventListener('click', event => {
@@ -27,9 +30,6 @@ window.onload = function () {
         element.innerHTML = favThingInput.value
         list.appendChild(element)
         element.classList.add('fav-thing')
-        // let createCheckImg = document.createElement('img')
-        // createCheckImg.src = 'images/untick.png'
-        // listItem.appendChild(createCheckImg)
         favThingInput.value = ''
     }
   })
