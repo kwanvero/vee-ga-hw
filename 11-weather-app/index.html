@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather App</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+    <div class="printWeather">
+        <img src="" alt="" class="printWeather-visual" />
+        <div class="printWeather-temperature"></div>
+    </div>
+    <form id="searchLocation" class="searchLocation" action="index.html" method="post">
+        <div class="searchLocation-container">
+            <input class="searchLocation-input" id="searchLocation-input" type="text" name="name" placeholder="Search Location">
+        </div>
+        <button class="searchLocation-search" type="submit" name="searchTemp">Search</button>
+    </form>
+  <script src="utils.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
